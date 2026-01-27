@@ -1,0 +1,27 @@
+{
+  "name": "physical-unit-converter-cli",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/gillianfranco/physical-unit-converter-cli#readme",
+  "bugs": {
+    "url": "https://github.com/gillianfranco/physical-unit-converter-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillianfranco/physical-unit-converter-cli.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1"
+  }
+}
