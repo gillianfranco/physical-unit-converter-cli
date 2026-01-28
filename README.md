@@ -161,6 +161,7 @@ physical-unit-converter-cli/
 ├── tests/
 │   └── convert.test.js       # Suite de testes (63 testes)
 ├── jest.config.js            # Configuração do Jest
+├── jsconfig.json             # Configuração do BaseURL
 ├── package.json              # Dependências e scripts
 └── README.md                 # Este arquivo
 ```
@@ -247,23 +248,3 @@ O projeto usa um algoritmo eficiente em duas etapas:
 2. **Conversão para Unidade Alvo**: `baseValue / toFactor`
 
 **Exceção**: Temperatura usa funções de conversão diretas devido aos offsets (não é linear).
-
-## ✨ Recursos Futuros
-
-- [ ] Interface interativa (prompt)
-- [ ] Suporte a mais unidades (pressão, energia, etc.)
-- [ ] Exportação de resultados (JSON, CSV)
-- [ ] Histórico de conversões
-- [ ] Modo silencioso (JSON output)
-
-## 📄 Licença
-
-ISC
-
-## 👨‍💻 Autor
-
-Desenvolvido com TDD e boas práticas de engenharia de software.
-
----
-
-**Desenvolvido com ❤️ usando Node.js, Commander.js e Chalk**
