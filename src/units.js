@@ -1,6 +1,6 @@
 export const units = {
   length: {
-    base: 'm',
+    base: "m",
     units: {
       m: 1,
       km: 1000,
@@ -15,11 +15,11 @@ export const units = {
       ft: 0.3048,
       yd: 0.9144,
       mi: 1604.34,
-      nmi: 1852
-    }
+      nmi: 1852,
+    },
   },
   mass: {
-    base: 'kg',
+    base: "kg",
     units: {
       kg: 1,
       g: 0.001,
@@ -32,10 +32,10 @@ export const units = {
       hg: 0.1,
       dag: 0.01,
       dg: 0.0001,
-    }
+    },
   },
   time: {
-    base: 's',
+    base: "s",
     units: {
       ks: 1000,
       hs: 100,
@@ -49,11 +49,11 @@ export const units = {
       ps: 0.000000000001,
       min: 60,
       h: 3600,
-      d: 86400
-    }
+      d: 86400,
+    },
   },
   current: {
-    base: 'A',
+    base: "A",
     units: {
       kA: 1000,
       A: 1,
@@ -61,33 +61,33 @@ export const units = {
       uA: 0.000001,
       nA: 0.000000001,
       pA: 0.000000000001,
-      MA: 1000000
-    }
+      MA: 1000000,
+    },
   },
   substanceAmount: {
-    base: 'mol',
+    base: "mol",
     units: {
       kmol: 1000,
       mol: 1,
       mmol: 0.001,
       umol: 0.000001,
       nmol: 0.000000001,
-      pmol: 0.000000000001
-    }
+      pmol: 0.000000000001,
+    },
   },
   luminousIntensity: {
-    base: 'cd',
+    base: "cd",
     units: {
       kcd: 1000,
       cd: 1,
       mcd: 0.001,
       ucd: 0.000001,
       ncd: 0.000000001,
-      pcd: 0.000000000001
-    }
+      pcd: 0.000000000001,
+    },
   },
   area: {
-    base: 'm2',
+    base: "m2",
     units: {
       km2: 1000000,
       hm2: 10000,
@@ -102,11 +102,11 @@ export const units = {
       yd2: 0.836127,
       mi2: 2589988.1,
       hectare: 10000,
-      acre: 4046.86
-    }
+      acre: 4046.86,
+    },
   },
   volume: {
-    base: 'm3',
+    base: "m3",
     units: {
       km3: 1000000000,
       hm3: 1000000,
@@ -121,17 +121,17 @@ export const units = {
       yd3: 0.764555,
       l: 0.001,
       ml: 0.000001,
-      gal: 0.003785
-    }
+      gal: 0.003785,
+    },
   },
   temperature: {
     conversions: {
-      'c-f': (value) => (value * 9 / 5) + 32,
-      'f-c': (value) => (value - 32) * 5 / 9,
-      'c-k': (value) => value + 273.15,
-      'k-c': (value) => value - 273.15,
-      'f-k': (value) => ((value - 32) * 5 / 9) + 273.15,
-      'k-f': (value) => ((value - 273.15) * 9 / 5) + 32
-    }
-  }
+      "c-f": (value) => (value * 9) / 5 + 32,
+      "f-c": (value) => ((value - 32) * 5) / 9,
+      "c-k": (value) => value + 273.15,
+      "k-c": (value) => value - 273.15,
+      "f-k": (value) => ((value - 32) * 5) / 9 + 273.15,
+      "k-f": (value) => ((value - 273.15) * 9) / 5 + 32,
+    },
+  },
 };
