@@ -131,7 +131,7 @@ export function cli() {
     .command("convert <value> <fromUnit> <toUnit> <unitType>")
     .description(
       "Converte um valor de uma unidade para outra\n" +
-        "                     Exemplo: convert 100 cm m length",
+      "                     Exemplo: convert 100 cm m length",
     )
     .action((value, fromUnit, toUnit, unitType) => {
       const numValue = parseFloat(value);
@@ -159,7 +159,7 @@ export function cli() {
     .command("units <unitType>")
     .description(
       "Lista todas as unidades de um tipo específico\n" +
-        "                Exemplo: units length",
+      "                Exemplo: units length",
     )
     .action((unitType) => {
       showUnitsForType(unitType);
