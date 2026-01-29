@@ -22,7 +22,16 @@ function getSupportedUnits(unitType) {
 
   if (unitType === "temperature") {
     // For temperature, extract units from conversion keys
-    return Object.keys(unitConfig.conversions).flatMap((key) => key.split("-"));
+    const supportedUnits = Object.keys(unitConfig.conversions).flatMap((key) => key.split("-"));
+    const supportedUnitsParsed = new Array();
+
+    supportedUnits.forEach((unit) => {
+      if (!supportedUnitsParsed.includes(unit)) {
+        supportedUnitsParsed.push(unit);
+      }
+    });
+
+    return supportedUnitsParsed;
   }
 
   return Object.keys(unitConfig.units);
@@ -47,7 +56,7 @@ function formatNumber(value) {
  * Displays information about available unit types
  */
 function showUnitTypes() {
-  console.log(chalk.cyan("\n📚 Tipos de Unidades Suportados:\n"));
+  console.log(chalk.cyan("\nTipos de Unidades Suportados:\n"));
 
   const unitTypesList = getSupportedUnitTypes();
   unitTypesList.forEach((type) => {
@@ -78,7 +87,7 @@ function showUnitsForType(unitType) {
   }
 
   const unitsList = getSupportedUnits(unitType);
-  console.log(chalk.cyan(`\n📊 Unidades para ${chalk.yellow(unitType)}:\n`));
+  console.log(chalk.cyan(`\nUnidades para ${chalk.yellow(unitType)}:\n`));
   unitsList.forEach((unit) => {
     console.log(chalk.gray(`  ${unit}`));
   });
