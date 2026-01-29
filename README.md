@@ -179,7 +179,6 @@ physical-unit-converter-cli/
 ├── tests/
 │   └── convert.test.js       # Suite de testes (63 testes)
 ├── jest.config.js            # Configuração do Jest
-├── jsconfig.json             # Configuração do BaseURL
 ├── package.json              # Dependências e scripts
 └── README.md                 # Este arquivo
 ```
